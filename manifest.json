@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Intelligent Email Assistant",
+  "version": "1.0",
+  "description": "AI-powered email assistant that helps you compose replies, draft new emails, and summarize messages with multiple tone options. Works with Gmail and Outlook.",
+  "permissions": ["activeTab", "storage", "clipboardWrite"],
+  "host_permissions": ["https://api.cohere.ai/*"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*", "https://outlook.live.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
