@@ -166,7 +166,7 @@ function cleanAIResponse(text) {
 
 // Cohere API Integration - Reply Generation
 async function generateReply(context, tone) {
-  const apiKey = 'G0zzb8DUYSJ4KjKy5xZE7WlXpI4IgpPACG7Pu12C';
+  const apiKey = '';
   
   const prompt = `You are an email assistant helping craft responses. The original email is:
   
